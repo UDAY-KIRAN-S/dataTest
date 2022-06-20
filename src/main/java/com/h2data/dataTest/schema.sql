@@ -1,0 +1,1 @@
+create table facts ( id int primary key ,animalfact text(999),ip varchar(30),time varchar(50));
