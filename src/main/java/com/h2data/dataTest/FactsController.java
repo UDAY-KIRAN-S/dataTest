@@ -50,7 +50,8 @@ public class FactsController {
         factsRepository.save(facts);
 
         //Returning Cat fact
-        return factItem[0].strip();
+        return "<html><body><center><b>" +
+                factItem[0].strip()+"</b></center></body></html>";
     }
 
     @GetMapping("/dog")
@@ -80,7 +81,8 @@ public class FactsController {
         factsRepository.save(facts);
 
         //Returning dog Fact
-        return factsItem[0];
+        return "<html><body><center><b>" +
+                factsItem[0].strip()+"</b></center></body></html>";
     }
 
     @GetMapping("/getDB")
